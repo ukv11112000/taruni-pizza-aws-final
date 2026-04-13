@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - sed -i "s#https://REPLACE_WITH_YOUR_BACKEND_URL#${API_BASE_URL}#g" src/environments/environment.prod.ts
+        - npm run build -- --configuration production
+  artifacts:
+    baseDirectory: dist/pizzitalia-v2
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
