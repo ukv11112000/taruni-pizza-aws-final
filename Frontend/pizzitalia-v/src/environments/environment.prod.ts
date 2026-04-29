@@ -7,7 +7,7 @@ export const environment = {
   customerUrl: `${baseUrl}/customer/`,
   userUrl: `${baseUrl}/user/`,
   coupanUrl: `${baseUrl}/coupan/`,
-  pizzaOrderUrl: `${baseUrl}/pizzaOrder/`,
+  pizzaOrderUrl: `${baseUrl}/pizzaorder/`,
   orderUrl: `${baseUrl}/order/`,
-  pizzaUrl: `${baseUrl}/pizza/`
+  pizzaUrl: `${baseUrl}/pizza/viewpizzalist`
 };
